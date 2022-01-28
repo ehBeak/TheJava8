@@ -2,8 +2,6 @@ package ch4;
 
 public class PrimitiveTypes {
 
-
-
     /* byte : -2^7 ~ 2^7-1 */
     public void checkByte() {
         byte byteMin = -128;
