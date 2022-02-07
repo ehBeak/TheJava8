@@ -23,5 +23,5 @@
     5. 어노테이션 사용
     * 사용: @AnnotationName(methodName=value) ex) @CustomAnnotation(number=0)
     * 값 받기: Annotation 참조객체 선언 -> getAnnotation -> 참조객체.method()
-    
-    * 어노테이션은 확장 불가(extends 사용 불가)
+
+    * 어노테이션은 확장(extends) 불가
