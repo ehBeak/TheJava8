@@ -1,5 +1,7 @@
 package ch13;
 
+import ch13.list.HealthInsurance;
+
 public class Chapter13 {
     /*
      *  1. 분석(요구사항 분석)
