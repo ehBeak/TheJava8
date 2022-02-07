@@ -1,0 +1,27 @@
+[1] Annotation
+    1. 용도
+    * 컴파일러에게 정보 알림
+    * 컴파일할 때와 설치시의 작업 지정
+    * 실행할 때 별도 처리 필요시
+
+    2. 기본 어노테이션
+    * @Override: 제대로 Override 했는지 확인하는 수단
+    * @Deprecated: 이제 사용하지 않는 메소드임을 경고
+    * @SuppressWarnings: 경고 무시
+
+    3. 메타 어노테이션: 어노테이션 선언시 사용
+    * @Target: 어노테이션을 적용할 대상 설정 ex) @Target(ElementType.METHOD,ElementType.CONSTRUCTOR)
+    * @Retention: 어노테이션 정보 유지 시간 설정 ex) @Retention(RetentionPolicy.RUNTIME)
+    * @Documented: 어노테이션 정보가 api 문서에 포함되는 것을 설정
+    * @Inherited: 부모 클래스의 어노테이션을 자식에서도 사용가능
+
+    4. 어노테이션 선언
+    * @interface
+    * 메소드: 어노테이션 값 지정 ex) public int number();
+    * default: 메소드의 기본 값 지정 ex) public String text() default "This is first annotation.";
+
+    5. 어노테이션 사용
+    * 사용: @AnnotationName(methodName=value) ex) @CustomAnnotation(number=0)
+    * 값 받기: Annotation 참조객체 선언 -> getAnnotation -> 참조객체.method()
+    
+    * 어노테이션은 확장 불가(extends 사용 불가)
