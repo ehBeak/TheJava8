@@ -1,0 +1,18 @@
+[1] Map
+    * Map 인터페이스를 구현한 클래스: HashMap,TreeMap, LinkedHashMap, Hashtable
+        - Map은 Collection view 사용하지만, Hashtable은 Enumeration객체를 통해 데이터를 처리한다.
+        - Map은 키, 값, 키-값으로 데이터를 순환하여 처리할 수 있지만, Hashtable은 키-값으로 데이터를 순환하여 처리한다.
+        - Map은 Iterator을 처리하는 도중에 데이터를 삭제하는 안전한 방법을 제공하지만, Hashtable은 그러한 기능을 제공하지 않는다.
+        - Collection 관련 클래스들이 쓰레드에 안전하려면, 이름에 Concurrent가 포함되어있거나 synchronized를 사용해야한다.
+    * 주요 메소드: put, get, remove
+
+[2] HashMap
+    * 생성자: (), (int initialCapacity), (int initialCapacity, float loadFactor), (Map<? extends K, ? extends V> m)
+    * map의 key를 참조자료형으로 사용할 때 equal와 hashCode를 꼭 오버라이딩 해주자
+    * key-value 한 쌍은 일대다 관계가 된 수 없음(value를 리스트로 하면 ok)
+    * key값이 없는데 get을 하면 ArrayIndexOutOfBoundaryException 이 아닌, null이 출력된다.
+    * 메소드: keySet(), values(), entrySet()
+
+[3] TreeMap
+    * 숫자>대문자>소문자>한글
+
