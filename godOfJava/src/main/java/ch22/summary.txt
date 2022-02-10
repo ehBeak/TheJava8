@@ -1,0 +1,27 @@
+[1] 자료구조
+    * List
+    * Set
+    * Queue
+    * Map
+
+[2] Collection
+    * 구현 클래스: List, Set, Queue
+    * public interface Collection<E> extends Iterable<E>
+        - Iterable의 메소드: Iterator<T> iterator(): Iterator을 반환
+        - Iterator의 메소드: hasNext, next, remove: 데이터를 순차적으로 가져올 수 있음
+
+[3] List 인터페이스
+    * Collection 확장
+    * 구현 클래스: ArrayList(Not Thread safe), Vector(Thread safe), Stack(LIFO), LinkedList
+    * ArrayList
+        - 생성자: (), (Collection<? extends E>), (int initialCapacity)
+        - 데이터를 담는 메소드: add(), addAll()
+        - 데이터를 꺼내는 메소드: get()
+        - 데이터의 위치를 반환하는 메소드: indexOf(), lastIndexOf()
+        - 데이터의 크기 반환하는 메소드: size()
+        - 배열로 뽑아낼 때: toArray() (Object타입으로 리턴)
+        - 데이터 삭제: clear(), remove(), removeAll()
+        - 기타: set(), trimToSize()
+    * Stack
+        - 생성자: ()
+        - 데이터 처리: peek(), pop(), push(), search(), empty()

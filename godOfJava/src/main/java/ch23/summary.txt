@@ -1,0 +1,19 @@
+[1] Set
+    * 중복X
+    * Set 인터페이스 구현 클래스: HashSet, TreeSet, LinkedHashSet
+        - HashSet: 순서가 필요없는 데이터를 hash table에 저장
+        - TreeSet: 저장된 데이터의 값에 따라서 정렬, red-black이라는 tree타입으로 저장
+        - LinkedHashSet: 연결된 목록 타입으로 데이터 저장, 저장된 순서에 따라서 값이 정렬
+    * equals와 hashCode는 반드시 오버라이딩
+
+[2] HashSet
+    * 구현한 인터페이스
+    * 생성자: (), (Collection<? extends E> c), (int InitialCapacity), (int InitialCapacity, float loadFactor)
+        - 로드팩터: 데이터의 개수/ 저장 공간  -> 데이터의 개수가 저장공간보다 커지면, 저장공간의 크기는 증가, rehash
+                                        -> 로드팩터가 클수록 공간은 넉넉해지지만, 데이터 찾는 시간 증가
+    * 메소드: add(), clear(), clone(), contains(), isEmpty(), iterator(), remove(), size()
+[3] LinkedList
+    * 구현한 인터페이스: List, Queue, Deque
+    * 생성자: (), (Collection<? extends E> c)
+    * ListIterator listIterator(int)
+        - ListIterator: 이전 데이터도 검색 가능하도록 만든 인터페이스
